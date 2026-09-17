@@ -5,17 +5,17 @@ Amadeus MobileID SDK for iOS, distributed as a binary XCFramework through Swift 
 ## Requirements
 
 - iOS 15 or later
-- Xcode 26 or later
+- Xcode 26.2 or later (the shipped module interface is emitted by a Swift 6.2 toolchain; an earlier Xcode cannot read it)
 
 ## Installation
 
 Add the package to your project:
 
 ```swift
-.package(url: "https://github.com/vbmobile/TRNSDK", exact: "1.1.0")
+.package(url: "https://github.com/vbmobile/TRNSDK", exact: "1.0.0")
 ```
 
-and link the `TRNSDKiOS` product (the package is `TRNSDK`, the product and module keep the `TRNSDKiOS` name) to your app target. The package declares its runtime dependencies (`AMANetworkClient`, `AMAImageProcessor`, `AMAUtils`, `AMADocModel`, `Lottie`); document reader providers such as `AMAMRZOCRReadRegula`, `AMARFIDReadRegula`, `AMADocScanMrz` and `AMADocRFIDReadiOS` are separate packages and are added by the host app as needed.
+and link the `TRNSDK` product to your app target, then `import TRNSDK`. The package declares its runtime dependencies (`AMANetworkClient`, `AMAImageProcessor`, `AMAUtils`, `AMADocModel`, `Lottie`); document reader providers such as `AMAMRZOCRReadRegula`, `AMARFIDReadRegula`, `AMADocScanMrz` and `AMADocRFIDReadiOS` are separate packages and are added by the host app as needed.
 
 ## Documentation
 

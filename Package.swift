@@ -8,8 +8,8 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "TRNSDKiOS",
-            targets: ["TRNSDKiOSWrapper"]
+            name: "TRNSDK",
+            targets: ["TRNSDKWrapper"]
         )
     ],
     dependencies: [
@@ -21,14 +21,14 @@ let package = Package(
     ],
     targets: [
         .binaryTarget(
-            name: "TRNSDKiOS",
-            url: "https://vbmobileidstorage.blob.core.windows.net/ios/TRNSDKiOS/TRNSDKiOS/TRNSDKiOS-1.1.0.zip",
-            checksum: "52bdf5b666cfd75dcedf94498c2434d3dd55e55a4fcfd18f74609fa95ddf2578"
+            name: "TRNSDK",
+            url: "https://vbmobileidstorage.blob.core.windows.net/ios/TRNSDK/TRNSDK/TRNSDK-1.0.0.zip",
+            checksum: "bbe72837154d3de54a09f52018d420437b826ba3977feb84a83f1733c2ac1672"
         ),
         .target(
-            name: "TRNSDKiOSWrapper",
+            name: "TRNSDKWrapper",
             dependencies: [
-                .target(name: "TRNSDKiOS"),
+                .target(name: "TRNSDK"),
                 .product(name: "Lottie", package: "lottie-spm"),
                 .product(name: "AMANetworkClient", package: "AMANetworkClient"),
                 .product(name: "AMAImageProcessor", package: "AMAImageProcessor"),
