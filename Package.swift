@@ -17,13 +17,13 @@ let package = Package(
         .package(url: "https://github.com/vbmobile/AMANetworkClient", .upToNextMinor(from: "7.0.4")),
         .package(url: "https://github.com/vbmobile/AMAImageProcessor", .upToNextMinor(from: "2.0.6")),
         .package(url: "https://github.com/vbmobile/AMAUtils", .upToNextMinor(from: "3.0.8")),
-        .package(url: "https://github.com/vbmobile/AMADocModel", .upToNextMinor(from: "3.1.0")),
+        .package(url: "https://github.com/vbmobile/AMADocModel", .upToNextMinor(from: "4.1.1")),
     ],
     targets: [
         .binaryTarget(
             name: "TRNSDK",
-            url: "https://vbmobileidstorage.blob.core.windows.net/ios/TRNSDK/TRNSDK/TRNSDK-1.0.2.zip",
-            checksum: "bb88221bf17a28a58bfa4444dba122d37b03532465a546dbbc29dddac40cc81a"
+            url: "https://vbmobileidstorage.blob.core.windows.net/ios/TRNSDK/TRNSDK/TRNSDK-1.1.0.zip",
+            checksum: "203816b2498c1db3223c22033d3aaf4b5df51477fee051248c2b53e9c99bf66c"
         ),
         .target(
             name: "TRNSDKWrapper",
