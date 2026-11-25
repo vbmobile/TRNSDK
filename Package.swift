@@ -22,8 +22,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "TRNSDK",
-            url: "https://vbmobileidstorage.blob.core.windows.net/ios/TRNSDK/TRNSDK/TRNSDK-1.3.0.zip",
-            checksum: "23cddee4a03c986babbfaef5e87fbd71dfc0a9e070587a6d2b2a6ab58606dd3a"
+            url: "https://vbmobileidstorage.blob.core.windows.net/1a-ios/TRNSDK/TRNSDK-1.3.0.zip",
+            checksum: "b0a3f93b15f71903103276b19e9c7d8fb65b0e0f4bff7c10ee8cd90294b696f9"
         ),
         .target(
             name: "TRNSDKWrapper",
